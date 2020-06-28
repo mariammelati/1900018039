@@ -3,8 +3,11 @@
 <head>
 	<title>mendaftar</title>
 </head>
-<body> <form>
-    <p>form daftar</p>
+<body> 
+   
+    <form method="POST" action="proses.php">
+    <h1 align="center">Form Mendaftar</h1>
+
     <p>
 	   <label for="nama-depan">Nama Depan:</label>
         <input name="nama-depan" type="text" />
@@ -22,19 +25,16 @@
         <input name="pass" type="password" />
     </p>
     <p>
-        <label for="hobi">hobi : </label>
-        <textarea name="kata sandi" rows="2" cols="20"></textarea>
+        <label for="hobi">Hobi : </label>
+        <textarea name="suka" rows="2" cols="20"></textarea>
     </p>
-    <p>
-        <label for="jenis kelamin">Jenis Kelamin : </label>
-        <select name="jenis kelamin">
+    <p> 
+         <label>Jenis kelamin :</label>
+        <label><input type="radio" name="jeniskelamin" value="Laki-laki">Laki-laki</input></label>
+        <label><input type="radio" name="jeniskelamin" value="Perempuan">Perempuan</input></label>
+
     </p>
-    <p>
-        <option value="0">pilih jenis kelamin :</option>
-        <option value="1">perempuan</option>
-        <option value="2">laki-laki</option>
-        </select>
-    </p>
+
     <p>
         <input type="submit" name="Daftar">
     </p>
@@ -43,5 +43,6 @@
 	</body>
 	</table>
 </form>
+
 </body>
 </html>
